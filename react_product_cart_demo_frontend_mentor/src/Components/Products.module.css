@@ -4,8 +4,24 @@
     box-sizing: border-box;
     }
 
-
-
+    .products{
+        padding: 3vw 0;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap:5vw ;
+    }
+    @media screen and (max-width:601px) {
+        .productDisplay{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap:5vw
+        }
+        .products h2{
+            width: 95%;
+            margin: auto;
+        }
+    }
 @media screen and (min-width:602px) {
     .products{
         width: 100%;

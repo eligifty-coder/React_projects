@@ -1,8 +1,20 @@
 
 .productBg{
     width: 100%;
-    /* padding-top: 2vw; */
     position: relative;
+}
+
+
+@media screen and (max-width:601px) {
+    .products{
+        width: 85%;
+        margin: auto;
+        display: grid;
+        align-items: start;
+        justify-items: center;
+        grid-gap:1.5vw ;
+        list-style: none;
+    }
 }
 @media screen and (min-width:602px) {
     .products{
