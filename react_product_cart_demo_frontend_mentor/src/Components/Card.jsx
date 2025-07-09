@@ -38,11 +38,12 @@ const Card = ({item,setCount,count,items,setItems}) => {
                 <img src="../../icon-increment-quantity.svg" alt="Add Btn" />
             </button>
             </div>)
+
     return (
         
         <li className={classes.card}>
             <div className= {classes.positionedEle}>
-            <img src={item.display} alt="load" className={`${item.count? classes.borderedProduct:''}`} />
+            <img src={item.display} alt="load" className={`${item.count? classes.borderedProduct:classes.productImg}`} />
             {displayBtn}
             </div>
             <section className={classes.text}>

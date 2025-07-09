@@ -1,3 +1,6 @@
+
+@media screen and (min-width:602px) {
+
 .orderModal{
     position: absolute;
     z-index: 3;
@@ -19,7 +22,6 @@
     padding: 1vw;
     display: grid;
     row-gap: 1vw;
-    
 }
 .orderList{
     list-style: none;
@@ -62,6 +64,7 @@
     height: 100%;
     object-fit: cover;
     margin-right: 2vw;
+    border-radius: 1.5vw;
 }
 .orderDetails h5{
     font-size: 1vw;
@@ -108,4 +111,130 @@
 }
 .ConfirmOrder:hover{
     opacity: 0.9;
+}
+}
+@media screen and (max-width:601px) {
+    .orderModal{
+        width: 100%;
+        margin: auto;
+        position: absolute;
+        z-index: 3;
+        left : 0%;
+        top: 10vw;
+        background: rgb(255,255,255);
+        padding: 2vw 0;
+        display: grid;
+        align-items: center;
+        row-gap: 2vw;
+        border-radius: 3vw;
+    }
+    .orderList{
+    list-style: none;
+    border-bottom: 0.4vw solid rgb(245,245,245);
+    /* padding: 2vw ; */
+}
+.orderLists{
+    width: 88vw;
+    margin: auto;
+}
+.orderLists{
+    background-color: rgb(251,246,243);
+    border-radius: 0.2vw;
+    padding: 4vw;
+    display: grid;
+    row-gap: 3vw;
+}
+.header{
+    display: grid;
+    align-items: center;
+    row-gap: 0.5vw;
+    width: 88vw;
+    margin: auto;
+    margin-bottom: 3vw;
+
+}
+
+.header img{
+    width: 4vw;
+    height: 100%;
+    object-fit: cover;
+}
+.header h2{
+    color:rgb(24,10,6);
+    font-size: 4vw;
+    width: 4vw;
+    font-weight: bolder;
+}
+.header span{
+    font-size: 2vw;
+    color: rgb(160,150,149);
+}
+.orderDetails {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+   
+    
+}
+.orderDetails .details{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    row-gap: 2vw;
+}
+.orderDetails img{
+    width: 8vw;
+    height: 100%;
+    object-fit: cover;
+    margin-right: 2vw;
+    border-radius: 1.5vw;
+}
+.orderDetails h5{
+    font-size: 2vw;
+    color: rgb(74,67,65);
+}
+.orderDetails span, .orderDetails .price{
+    font-size: 2vw;
+    color: rgb(148,131,128);
+}
+.orderDetails .redSpan{
+    color: rgb(165, 73, 59);
+    font-weight: bold;
+    display: inline-block;
+}
+.orderDetails .total{
+    font-weight: bold;
+    padding-left: 0.2vw;
+    font-size: 2vw;
+}
+.orderTotal{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0 1vw;
+    padding-bottom: 3vw;
+}
+.orderTotal span{
+    font-size: 2vw;
+    color: rgb(114,119,109);
+}
+.orderTotal h3{
+    font-size: 2.5vw;
+    color: rgb(22,9,5);
+    font-weight: bolder;
+}
+.confirmOrder {
+    border:none ;
+    border-radius: 8vw;
+    background: rgb(185,40,14);
+    padding: 3vw;
+    color: rgb(255,255,255);
+    font-size: 3.5vw;
+    transition: opacity 0.2s;
+    width: 88vw;
+    margin: 3vw auto;
+}
+.ConfirmOrder:hover{
+    opacity: 0.9;
+}
 }

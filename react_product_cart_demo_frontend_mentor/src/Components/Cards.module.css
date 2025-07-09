@@ -1,4 +1,114 @@
+@media screen and (max-width:601px) {
+    .card{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap:5vw ;
+    }
+    .borderedProduct{
+        border: 0.19vw  solid rgb(185, 40,14);;
+    }
+    
+    .positionedEle{
+        height: auto;
+        justify-self: center;
+    }
+    .text{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap:1vw ;
+        width: 80vw;
+        margin: auto;
+    }
+    .text h5{
+        color: rgb(53,42,38);
+        
 
+    }
+    .category{
+        color: rgb(179,168,166);
+        font-size: 2.5vw;
+    }
+    .price{
+        color: rgb(183,83,83);
+        font-size: 2.5vw;
+    }
+    .name{
+        font-size: 2.5vw;
+    }
+    .card button img{
+        width: 2vw;
+
+    }
+    .positionedEle{
+        position: relative;
+    }
+    .card .cartBtn, .btnStyle {
+        border: 0.1vw solid rgb(179, 161, 161);
+        background-color: rgb(255,255,255);
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        place-items: center;
+        border-radius: 3vw;
+        padding: 1.8vw;
+        column-gap: 0.9vw;
+        font-size: 2vw;
+        font-weight: bold;
+        width: 30%;
+        position: absolute;
+        top: 92%;
+        left: 25%;
+        right: 25%;
+        margin: auto;
+        cursor:pointer;
+        z-index: 1;
+        color: rgb(255,255,255);
+    }
+    .card .cartBtn{
+        color: rgb(54,47,42);
+    }
+    .card button{
+        transition: background-color 2s 500ms;
+    }
+    .card button:active ,.card button:active{
+        background-color: rgb(185,49,14);
+        cursor: pointer;
+        border: none;
+    }
+    .card .btnStyle{
+        background-color: rgb(185, 40,14);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .card .btnStyle button{
+        background-color: rgb(185, 40,14);
+        border: 0.2vw solid rgb(255, 255, 255);
+        border-radius: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+        width: 2.2vw;
+        height: 2.2vw;
+        padding: 0.3vw;
+        transition: opacity 2s;
+    }
+    .card .btnStyle button:hover{
+        opacity: 0.5;
+    }
+    .card .btnStyle button img{
+        width: 100%;
+    }
+    .productImg , .borderedProduct {
+        width: 80vw;
+        height: 55vw;
+        object-fit: cover;
+        padding: 0;
+        border-radius: 0.9vw;
+        position: relative;
+    }
+}
 
 @media screen and (min-width:602px) {
     .card{
@@ -15,7 +125,6 @@
         object-fit: cover;
         padding: 0;
         border-radius: 0.9vw;
-        
     }
     .text{
         display: grid;
@@ -101,6 +210,7 @@
         width: 95%;
 
     }
+    /*  */
 
     .card .btnStyle img{
         width: 100%;
