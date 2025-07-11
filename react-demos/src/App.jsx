@@ -1,4 +1,5 @@
 
+import UserList from './component/UserList'
 const App = () => {
   const numbers =  [1,2,3,4,5]
   const usersInfo = [
@@ -30,6 +31,7 @@ const App = () => {
           </ul>
         )
       }
+      <UserList/>
     </main>
   )
 }
