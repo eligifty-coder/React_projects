@@ -1,5 +1,6 @@
 
 import UserList from './component/UserList'
+import ProductList from './component/ProductList'
 const App = () => {
   const numbers =  [1,2,3,4,5]
   const usersInfo = [
@@ -32,6 +33,7 @@ const App = () => {
         )
       }
       <UserList/>
+      <ProductList/>
     </main>
   )
 }
