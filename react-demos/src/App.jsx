@@ -1,22 +1,15 @@
+const InvalidPassword = () => <h1>Invalid Password</h1>
+const ValidPassword = () => <h1>Valid Password</h1>
 
-import Card from "./component/Card";
+const Password = ({isValid}) => {
+    if(isValid){
+      console.log(isValid)
+        return <ValidPassword/>
+    }
+    return <InvalidPassword/>
+}
 const App = () => {
-  return (
-    <div>
-      <Card>
-        <h1>My Card 1</h1>
-        <p>This is some content for card 1</p>
-      </Card>
-      <Card>
-        <h1>My Card 2</h1>
-        <p>This is some content for card 2</p>
-      </Card>
-      <Card>
-        <h1>My Card 3</h1>
-        <p>This is some content for card 3</p>
-      </Card>
-    </div>
-  )
+  return <Password isValid={false}/>
 }
 
 
