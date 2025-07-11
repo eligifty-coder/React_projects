@@ -1,12 +1,15 @@
 import React from 'react'
-import { FaCartArrowDown } from "react-icons/fa";
-import { FaComputer } from "react-icons/fa6";
+
 import "./index.css"
+import StyleCard from './component/StyleCard'
+import ProfileCard from './component/ProfileCard'
+import IconComponent from './component/IconComponent'
 
 const App = () => {
   return (<section>
-    <FaCartArrowDown/>
-    <FaComputer/>
+    <StyleCard/>
+    <ProfileCard/>
+    <IconComponent/>
     </section>
   )
 }
