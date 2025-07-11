@@ -1,10 +1,9 @@
 import React from 'react'
-
+import "./index.css"
 
 const App = () => {
-  const styles = {color:'#fff', backgroundColor:'crimson', padding:'2rem'}
   return (<section>
-      <h1 style ={styles}>Inline Style</h1>
+    <h1>Separate file for styling</h1>
     </section>
   )
 }
