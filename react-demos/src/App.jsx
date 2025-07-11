@@ -12,14 +12,14 @@ const App = () => {
   )
 }
 
-const User  = (props) =>{
-  console.log(props)
+const User  = ({img,name,age,isMarried,hobbies}) =>{
+
   return <section>
-    <img src={props.img} alt={props.name} width='200' />
-    <h1>Name: {props.name}</h1>
-    <h2>Age: {props.age}</h2>
-    <h3>Is Married: { props.isMarried} </h3>
-    <h4>Hobbies: {props.hobbies}</h4>
+    <img src={img} alt={name} width='200' />
+    <h1>Name: {name}</h1>
+    <h2>Age: {age}</h2>
+    <h3>Is Married: { isMarried} </h3>
+    <h4>Hobbies: {hobbies}</h4>
   </section>
 }
 
