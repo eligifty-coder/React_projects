@@ -1,9 +1,12 @@
 import React from 'react'
+import { FaCartArrowDown } from "react-icons/fa";
+import { FaComputer } from "react-icons/fa6";
 import "./index.css"
 
 const App = () => {
   return (<section>
-    <h1>Separate file for styling</h1>
+    <FaCartArrowDown/>
+    <FaComputer/>
     </section>
   )
 }
