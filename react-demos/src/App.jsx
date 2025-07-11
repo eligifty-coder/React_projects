@@ -1,6 +1,6 @@
 
-import UserList from './component/UserList'
-import ProductList from './component/ProductList'
+import Person from "./Person"
+import Product from "./Product"
 const App = () => {
   return (
     <User
@@ -14,13 +14,16 @@ const App = () => {
 
 const User  = ({img,name,age,isMarried,hobbies}) =>{
 
-  return <section>
-    <img src={img} alt={name} width='200' />
-    <h1>Name: {name}</h1>
-    <h2>Age: {age}</h2>
-    <h3>Is Married: { isMarried} </h3>
-    <h4>Hobbies: {hobbies}</h4>
-  </section>
+  return <div>
+    <Person 
+    name='Gift_jsx'
+    age={22}
+    />
+    <Product
+    name='Iphone'
+    price = {3000}
+    />
+  </div>
 }
 
 export default App;
