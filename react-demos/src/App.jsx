@@ -1,29 +1,23 @@
 
-import Person from "./Person"
-import Product from "./Product"
+import Card from "./component/Card";
 const App = () => {
   return (
-    <User
-    img ='https://avatars.githubusercontent.com/u/58071014?s=400&u=d76cf46c49a7bb6d83554935eeb4f10dd430f85a&v=4'
-    name='Gift_jsx' 
-    age= {22} 
-    isMarried={false} 
-    hobbies ={['Coding ', 'Reading ', 'Sleeping ']} />
+    <div>
+      <Card>
+        <h1>My Card 1</h1>
+        <p>This is some content for card 1</p>
+      </Card>
+      <Card>
+        <h1>My Card 2</h1>
+        <p>This is some content for card 2</p>
+      </Card>
+      <Card>
+        <h1>My Card 3</h1>
+        <p>This is some content for card 3</p>
+      </Card>
+    </div>
   )
 }
 
-const User  = ({img,name,age,isMarried,hobbies}) =>{
-
-  return <div>
-    <Person 
-    name='Gift_jsx'
-    age={22}
-    />
-    <Product
-    name='Iphone'
-    price = {3000}
-    />
-  </div>
-}
 
 export default App;
